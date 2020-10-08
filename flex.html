@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex positioning</title>
     <style>
-        .container{
+        .container {
             display: flex;
             border: 2px dashed red;
             flex-direction: row;
-            height: 500px;
-            align-items: center;
-            
+            height: 64px;
+            align-items: flex-end;
+            justify-content: space-evenly;
+
         }
-        .box{
-            flex: 1;
+
+        .box {
+            /* flex: 1; */
             border: 2px dashed blue;
             /* text-align: center; */
-            width:60px;
+            width: 60px;
             height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .box:first-child{
-            flex: 3;
+
         }
 
+        .box:first-child {
+            /* flex: 3; */
+        }
+
+        .another-container {
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            align-content: stretch;
+            background-color: orange;
+
+        }
+
+        section {
+            flex: 1;
+            margin: auto;
+            
+        }
+        section:last-child {
+            flex: 5;
+            border: 2px solid black;
+
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="box">1</div>
@@ -39,5 +64,105 @@
         <div class="box">6</div>
 
     </div>
+    <div class="another-container">
+
+        <section>
+            <ul>
+                <li>Mickey</li>
+                <li>Donald</li>
+                <li>Goffy</li>
+                <li>Daisy</li>
+
+            </ul>
+        </section>
+        <section>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet hic nihil, sed facilis quaerat
+                delectus
+                est, dolores, vel nulla facere fuga repellendus velit voluptate doloremque rerum? Et, minus porro!
+            </p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+            dignissimos velit
+            quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit molestias.
+            Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident quam tenetur minima ex
+            tempora
+            quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil, placeat est.
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, porro alias? Earum consequatur
+                dignissimos
+                velit quis nesciunt? Velit ut laboriosam commodi placeat, ipsum deserunt, ad dolores suscipit hic odit
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet animi unde provident
+                quam
+                tenetur minima ex tempora quia delectus tempore, repellendus quos nam vero, distinctio corrupti nihil,
+                placeat
+                est.
+            </p>
+
+        </section>
+
+    </div>
+
 </body>
+
 </html>
